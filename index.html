@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class='cursor' id="cursor"></div>
 <nav>
 <div class="header">
     <div class="logo">
@@ -190,5 +191,13 @@
     <img src="Privacy.png" alt="">
 </div>
 </footer>
+
+<script>
+    var cursor = document.getElementById("cursor");
+document.body.addEventListener("mousemove", function(e) {
+  cursor.style.left = e.clientX + "px",
+    cursor.style.top = e.clientY + "px";
+});
+</script>
 </body>
 </html>
