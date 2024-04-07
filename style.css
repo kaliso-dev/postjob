@@ -106,7 +106,20 @@ a {
     border-radius: 20px;
     background-color: transparent;
     align-items: center;
+    transform: translateX(500px);
+    transition: transform 1s;
+    animation: moveSearch 1s forwards;
 }
+
+
+@keyframes moveSearch {
+    from {
+      transform: translateX(500px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
 
 input {
     background-color: transparent;
@@ -115,6 +128,8 @@ input {
     height: 30px;
     width: 400px;
     color: White;
+    
+      
 }
 
 
@@ -140,7 +155,9 @@ input {
     height: 200px;
     font-family: police;
     filter: blur(5px);
+    transition: filter 0.3s ease; /* Durée de transition de 0.3 secondes */
 }
+
 
 .box:hover {
     box-shadow: inset 0 0 10px black;
@@ -218,6 +235,7 @@ input:focus {
     border-radius: 20px;
     font-family: police;
     transform: rotate(180deg);
+    transition: 0.30s;
 }
 
 .box1:hover {
@@ -228,9 +246,13 @@ input:focus {
 }
 
 .box1:hover {
-    transition: 0.85s;
+    transition:0.85s;
     transform: rotate(360deg);
 }
+
+
+
+
 
 .grid {
     display: grid;

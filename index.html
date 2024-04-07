@@ -198,6 +198,18 @@ document.body.addEventListener("mousemove", function(e) {
   cursor.style.left = e.clientX + "px",
     cursor.style.top = e.clientY + "px";
 });
+
+document.getElementById('search').addEventListener('mouseenter', function() {
+  this.classList.add('active');
+});
+
+document.getElementById('search').addEventListener('mouseleave', function() {
+  this.classList.remove('active');
+});
+
+
+
+
 </script>
 </body>
 </html>
